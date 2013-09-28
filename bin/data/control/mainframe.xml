@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<theme version="1.0" xmlns="http://www.uieasy.com"  xsi:schemaLocation="http://www.uieasy.com QQ2009.xsd">
+	<manifest name="default" folder="mainframe" author="uieasy" description="QQ2009" link="http://www.uieasy.com" email=""  />
+
+		<!-- window main ico -->
+	<dsimage>
+	
+		<!--window background image-->
+    <image id="dialog.main.login.bk" value="bg_login.bmp"/>
+		<image id="mainframe.window.bk" value="mainframe.bmp" />
+    <image id="dialog.main.texture.bamboo" value="texture/bamboo.png" />
+    <image id="dialog.main.texture.star" value="texture/star.png"/>
+    <image id="dialog.main.bk" value="bg.bmp"/>
+
+    <!--scrollbar image-->
+    <image id="stardard.scrollbar" value="scrollbar/scrollbar.bmp" />
+
+    <image id="searchedit.bk" value="editbk.png"/>
+	</dsimage>
+
+  <dscolor>
+    <color id="system.border" value="RGB(84,165,213)" />
+    <color id="system_bg" value="RGB(255,255,255)" />
+  </dscolor>
+
+
+  <dswindow>
+    <window name="scrollbar" type="scrollbar">
+      <scrollinfo width="17" height="17" interval="1" splitwidth="3" />
+      <image id="scrollbar.bk.pic" picfile="#stardard.scrollbar" />
+    </window>
+
+    <window name="scrollwindow" type="">
+      <property scrollbar="scrollbar" />
+      <rect id="scrollwindow.border" index="1" bordercolor="#system.border" fillcolor="RGB(255,255,255)" borderwidth="2" style="hole" />
+    </window>
+
+    <window name="mainframe" type="dialog">
+      <property clipcolor="RGB(255,0,255)"/>
+      <!--bug when set the width and height of dialog -->
+      <dialoginfo bordertop="10" borderbottom="10" borderleft="10" borderright="10" minwidth="250" minheight="500" DrawSysMenu="false"   captionheight="-1" clientstarty="0"/>
+      <image index="0" state="all"  picfile="#dialog.main.bk" paintmode="stretchpartall" left_part="20" top_part="200" right_part="20" bottom_part="20" />
+      <image index="1" state="all" picfile="#searchedit.bk" top="78" left="1" height="35" right="-2" paintmode="stretchparthorz" left_part="20" right_part="31" />
+      <image index="3" state="all" picfile="#dialog.main.texture.star" rectinfile="55,100,100,100" top="0" left="-198" bottom="-2" width="268" height="265" right="-2" />
+      <!--<image index="4" state="all" picfile="#dialog.main.texture.bamboo" top="20" left="-198" bottom="0" width="190" height="67" right="-2" />-->
+
+    </window>
+
+    <window name="mainframeLogin" type="dialog">
+      <property clipcolor="RGB(255,0,255)"/>
+      <!--bug when set the width and height of dialog -->
+      <dialoginfo bordertop="10" borderbottom="10" borderleft="10" borderright="10" minwidth="250" minheight="500" DrawSysMenu="false"   captionheight="-1" clientstarty="0"/>
+      <image index="0" state="all"  picfile="#dialog.main.login.bk" paintmode="stretchpartall" left_part="2" top_part="2" right_part="2" bottom_part="2" />
+    </window>
+
+    <window name="colordialog" type="dialog">
+      <property  clipcolor="RGB(255,0,0)"/>
+      <rect  bordercolor="RGB(255,0,0)" fillcolor="RGB(235,247,255)" borderwidth="0" />
+      <rect  bordercolor="RGB(25,85,95)" fillcolor="RGB(137,214,255)" borderwidth="0" roundwidth="5" roundheight="5"/>
+    </window>
+
+
+    <window name="publishialog" type="dialog">
+      <property  clipcolor="RGB(255,0,0)"/>
+      <rect  bordercolor="RGB(255,0,0)" fillcolor="RGB(235,247,255)" borderwidth="0" />
+      <rect  bordercolor="RGB(25,85,95)" fillcolor="RGB(115,159,232)" borderwidth="0" roundwidth="5" roundheight="5"/>
+    </window>
+
+    <window name="showuserinfo" type="dialog">
+      <property  clipcolor="RGB(255,0,0)"/>
+      <rect  bordercolor="RGB(255,0,0)" fillcolor="RGB(235,247,255)" borderwidth="0" />
+      <rect  bordercolor="RGB(25,85,95)" fillcolor="RGB(137,214,255)" borderwidth="0" roundwidth="5" roundheight="5"/>
+    </window>
+  </dswindow>
+
+</theme>

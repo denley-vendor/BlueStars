@@ -1,0 +1,294 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<theme version="1.0" xmlns="http://www.uieasy.com"  xsi:schemaLocation="http://www.uieasy.com QQ2009.xsd">
+	<manifest name="default" folder="Button" author="uieasy" description="QQ2009" link="http://www.uieasy.com" email=""  />
+  
+ 
+	<dsimage>
+    <image id="dialog.button.insert" value="button_inserimage.bmp"/>
+    <image id="dialog.button.cut" value="button_cutimage.bmp" />
+    
+    <image id="dialog.close.normal" value="btn_close_normal.png"/>
+    <image id="dialog.close.disable" value="btn_close_disable.png"/>
+    <image id="dialog.close.down" value="btn_close_down.png" />
+    <image id="dialog.close.highlight" value="btn_close_highlight.png"/>
+
+    <image id ="dialog.max.normal" value="btn_max_normal.png"/> 
+    <image id ="dialog.max.down" value="btn_max_down.png"/>
+    <image id ="dialog.max.highlight" value="btn_max_highlight.png"/>
+
+    <image id ="dialog.mini.normal" value="btn_mini_normal.png"/>
+    <image id ="dialog.mini.down" value="btn_mini_down.png"/>
+    <image id ="dialog.mini.highlight" value="btn_mini_highlight.png"/>
+
+    <image id="dialog.select.normal" value="button_select_normal.bmp"/>
+    <image id="dialog.select.down" value="button_select_On.bmp"/>
+
+    <image id="dialog.select.msg.all" value="dialog.select.msg.png"/>
+    <image id="dialog.select.man.all" value="dialog.select.man.png"/>
+    <image id="dialog.select.group.all" value="dialog.select.group.png"/>
+    <image id="dialog.select.blank.all" value="dialog.select.blank.png"/>
+    <image id="button.tittle.bk" value="button.titlle.bk.png"/>
+    
+    <image id="button.name.bk" value="button.titlle.bk.png"/>
+    
+    <image id="chekbutton_normal_bk" value="button_check_normal.png"/>
+    <image id="chekbutton_check_bk" value="button_check_check.png"/>
+    
+    <image id="button.login.normal.bk" value="button_login_all.png"/>
+    
+    <image id="button.color.bk" value="button_color.png"/>
+    <image id="button.color.down.bk" value="button_color_down.bmp" transparentcolor="RGB(255,0,255)"/>
+    <image id="button.color.move.bk" value="button_color_move.bmp" transparentcolor="RGB(255,0,255)"/>
+
+    <image id="color001.nor" value="colour_001.bmp"  canadjust="false"/>
+    <image id="color001.over" value="colour_001highlight.bmp" canadjust="false"/>
+    <image id="color002.nor" value="colour_002.bmp" canadjust="false"/>
+    <image id="color002.over" value="colour_002highlight.bmp" canadjust="false"/>
+    <image id="color003.nor" value="colour_003.bmp" canadjust="false"/>
+    <image id="color003.over" value="colour_003highlight.bmp" canadjust="false"/>
+    <image id="color004.nor" value="colour_004.bmp" canadjust="false"/>
+    <image id="color004.over" value="colour_004highlight.bmp" canadjust="false"/>
+    <image id="color005.nor" value="colour_005.bmp" canadjust="false"/>
+    <image id="color005.over" value="colour_005highlight.bmp" canadjust="false"/>
+    <image id="color006.nor" value="colour_006.bmp" canadjust="false"/>
+    <image id="color006.over" value="colour_006highlight.bmp" canadjust="false"/>
+    <image id="color007.nor" value="colour_007.bmp" canadjust="false"/>
+    <image id="color007.over" value="colour_007highlight.bmp" canadjust="false"/>
+    <image id="color008.nor" value="colour_008.bmp" canadjust="false"/>
+    <image id="color008.over" value="colour_008highlight.bmp" canadjust="false"/>
+    
+    <image id="button_upload" value="button_upload.png"/>
+  </dsimage>
+
+  <dsfont>
+    <font id="default" fontface="Tahoma" fontsize="12" />
+    <font id="dialog.main.name" bold="true" fontface="Tahoma" fontsize="12" />
+  </dsfont>
+
+<dswindow>
+
+    <window name ="dialogButtonTittle" type ="button">
+      <property  tooltips="#default"  cursor="#handcur" btransparentbk="true" width="66" height="66"/>
+      <buttoninfo subtype="push"  />
+      <image id="buttontittle" state="all" picfile="" top="1" left="1" width="64" height="64"/>
+      <rect state="down" bordercolor="#system.border" fillcolor="RGB(200,255,200)" borderwidth="3" style="hole" roundwidth="5" roundheight="5"/>
+      <!--<rect state="normal" bordercolor="#system.border" fillcolor="RGB(51,102,255)" borderwidth="3" style="hole" roundwidth="7" roundheight="5"/>-->
+      <rect state="over|normal" bordercolor="#system.border" fillcolor="RGB(231,237,250)" borderwidth="2" style="hole" roundwidth="5" roundheight="5"/>
+      <rect state="disable" bordercolor="#system.border" fillcolor="RGB(255,0,0)" borderwidth="3"  roundwidth="5" roundheight="5" />
+
+    </window>
+  
+    <window name ="dialogButtonCut" type ="button">
+      <property  tooltips="#default"  cursor="#handcur" btransparentbk="true" />
+      <buttoninfo subtype="push"  />
+      <image state="all" picfile="#dialog.button.cut" />
+    </window>
+
+    <window name ="dialogButtonInsert" type ="button">
+      <property  tooltips="#default"  cursor="#handcur" btransparentbk="true"/>
+      <buttoninfo subtype="push"  />
+      <image state="all" picfile="#dialog.button.insert"/>
+    </window>
+  
+    <window name ="dialogButtonClose" type ="button">
+      <property  tooltips="#default"  cursor="#handcur" btransparentbk="true" width="39" height="20"/>
+      <buttoninfo subtype="push"  />
+      <image state="normal" picfile="#dialog.close.normal" top="0" left="0" width="36" height="36"/>
+      <image state="over" picfile="#dialog.close.highlight" top="0" left="0" width="36" height="36"/>
+      <image state="down" picfile="#dialog.close.down" top="0" left="0" width="36" height="36"/>
+      <image state="disable" picfile="#dialog.close.disable" top="0" left="0" width="36" height="36"/>
+    </window>
+
+  <window name ="dialogButtonMax" type ="button">
+    <property  tooltips="#default"  cursor="#handcur" btransparentbk="true" width="28" height="20"/>
+    <buttoninfo subtype="push"  />
+    <image state="normal" picfile="#dialog.max.normal" top="0" left="0" width="36" height="36"/>
+    <image state="over" picfile="#dialog.max.highlight" top="0" left="0" width="36" height="36"/>
+    <image state="down" picfile="#dialog.max.down" top="0" left="0" width="36" height="36"/>
+    <image state="disable" picfile="#dialog.max.highlight" top="0" left="0" width="36" height="36"/>
+  </window>
+
+  <window name ="dialogButtonMin" type ="button">
+    <property  tooltips="#default"  cursor="#handcur" btransparentbk="true" width="28" height="20"/>
+    <buttoninfo subtype="push"  />
+    <image state="normal" picfile="#dialog.mini.normal" top="0" left="0" width="36" height="36"/>
+    <image state="over" picfile="#dialog.mini.highlight" top="0" left="0" width="36" height="36"/>
+    <image state="down" picfile="#dialog.mini.down" top="0" left="0" width="36" height="36"/>
+    <image state="disable" picfile="#dialog.mini.highlight" top="0" left="0" width="36" height="36"/>
+  </window>
+
+  <window name ="dialogButtonSelect" type ="button">
+    <property  tooltips="#default"  cursor="#handcur" btransparentbk="true" width="85" height="34"/>
+    <buttoninfo subtype="check"  />
+    <image state="normal" picfile="#dialog.select.normal"/>
+    <image state="over" picfile="#dialog.select.normal"/>
+    <image state="down" picfile="#dialog.select.down"/>
+    <image state="checked" picfile="#dialog.select.down"  />
+  </window>
+
+  <window name ="dialogButtonSelectMsg" type ="button">
+    <property  tooltips="#default"  cursor="#handcur" btransparentbk="true" width="54" height="30"/>
+    <buttoninfo subtype="check"  />
+    <image state="over" picfile="#dialog.select.msg.all" rectinfile="55,0,54,30"  top="0" left="0" width="54" height="30"/>
+    <image state="normal" picfile="#dialog.select.msg.all" rectinfile="0,0,54,30" top="0" left="0" width="54" height="30"/>
+    <image state="down" picfile="#dialog.select.msg.all" rectinfile="110,0,54,30" top="0" left="0" width="54" height="30"/>
+
+    <image state="checked" picfile="#dialog.select.msg.all" rectinfile="55,0,54,30"  top="0" left="0" width="54" height="30"/>
+    <image state="checkedover" picfile="#dialog.select.msg.all" rectinfile="55,0,54,30"  top="0" left="0" width="54" height="30"/>
+    <image state="checkeddown" picfile="#dialog.select.msg.all" rectinfile="55,0,54,30"  top="0" left="0" width="54" height="30"/>
+
+  </window>
+
+  <window name ="dialogButtonSelectMan" type ="button">
+    <property  tooltips="#default"  cursor="#handcur" btransparentbk="true" width="54" height="30"/>
+    <buttoninfo subtype="push"  />
+    <image state="over" picfile="#dialog.select.man.all" rectinfile="55,0,54,30"  top="0" left="0" width="54" height="30"/>
+    <image state="normal" picfile="#dialog.select.man.all" rectinfile="0,0,54,30" top="0" left="0" width="54" height="30"/>
+    <image state="down" picfile="#dialog.select.man.all" rectinfile="110,0,54,30" top="0" left="0" width="54" height="30"/>
+
+    <image state="checked" picfile="#dialog.select.man.all" rectinfile="55,0,54,30"  top="0" left="0" width="54" height="30"/>
+    <image state="checkedover" picfile="#dialog.select.man.all" rectinfile="55,0,54,30"  top="0" left="0" width="54" height="30"/>
+    <image state="checkeddown" picfile="#dialog.select.man.all" rectinfile="55,0,54,30"  top="0" left="0" width="54" height="30"/>
+
+  </window>
+
+  <window name ="dialogButtonSelectGroup" type ="button">
+    <property  tooltips="#default"  cursor="#handcur" btransparentbk="true" width="54" height="30"/>
+    <buttoninfo subtype="push"  />
+    <image state="over" picfile="#dialog.select.group.all" rectinfile="55,0,54,30"  top="0" left="0" width="54" height="30"/>
+    <image state="normal" picfile="#dialog.select.group.all" rectinfile="0,0,54,30" top="0" left="0" width="54" height="30"/>
+    <image state="down" picfile="#dialog.select.group.all" rectinfile="110,0,54,30" top="0" left="0" width="54" height="30"/>
+
+    <image state="checked" picfile="#dialog.select.group.all" rectinfile="55,0,54,30"  top="0" left="0" width="54" height="30"/>
+    <image state="checkedover" picfile="#dialog.select.group.all" rectinfile="55,0,54,30"  top="0" left="0" width="54" height="30"/>
+    <image state="checkeddown" picfile="#dialog.select.group.all" rectinfile="55,0,54,30"  top="0" left="0" width="54" height="30"/>
+
+  </window>
+
+  <window name ="dialogButtonSelectBlank" type ="button">
+    <property  tooltips="#default"  cursor="#handcur" btransparentbk="true" width="95" height="30"/>
+    <buttoninfo subtype="push"  />
+    <image state="over" picfile="#dialog.select.blank.all" rectinfile="95,0,95,30"  top="0" left="0" width="95" height="30"/>
+    <image state="normal" picfile="#dialog.select.blank.all" rectinfile="0,0,95,30" top="0" left="0" width="95" height="30"/>
+    <image state="down" picfile="#dialog.select.blank.all" rectinfile="190,0,95,30" top="0" left="0" width="95" height="30"/>
+    <image state="disable" picfile="#dialog.select.blank.all" rectinfile="285,0,54,30" top="0" left="0" width="95" height="30"/>
+  </window>
+
+  <window name ="dialogButtonMyName" type ="button">
+    <property  tooltips="#default"  cursor="#handcur" btransparentbk="true"/>
+    <buttoninfo subtype="push"  />
+    <image state="over" picfile="#button.name.bk" top="1" left="2" width="95" height="15"/>
+    <text state="all" font="#default" horzalign="center" textcolor="RGB(0,0,0)" />
+  </window>
+  <window name ="dialogButtonMyNameBold" type ="button">
+    <property  tooltips="#default"  cursor="#handcur" btransparentbk="true"/>
+    <buttoninfo subtype="push"  />
+    <image state="over" picfile="#button.name.bk" top="0" left="0" width="95" height="15"/>
+    <text state="all" font="#dialog.main.name" horzalign="center" textcolor="RGB(0,0,0)" />
+  </window>
+
+  <window name="allcheckbutton" type="button">
+    <property btransparentbk="true" />
+    <buttoninfo subtype="check" />
+    <image state="normal" picfile="#chekbutton_normal_bk" left="0" top="0" width="15" height="15" />
+    <image state="over|down" picfile="#chekbutton_normal_bk" left="0" top="0" width="15" height="15" />
+    <image state="checked" picfile="#chekbutton_check_bk" left="0" top="0" width="15" height="15" />
+    <image state="checkedover|checkeddown" picfile="#chekbutton_check_bk" left="0" top="0" width="15" height="15" />
+    <text state="normal|down|checked|checkedover|checkeddown" font="#default" left="18" bsingleline="true" textcolor="RGB(0,20,20)" />
+    <text state="over" font="#default" left="18" bsingleline="true" textcolor="RGB(50,0,50)" />
+  </window>
+  
+  <window name="buttonLogin" type="button">
+    <property tooltips="#第三步，点此登录" btransparentbk="true" />
+    <buttoninfo subtype="push" />
+    <image state="over" picfile="#button.login.normal.bk" rectinfile="178,0,88,30"  top="0" left="0" width="88" height="30"/>
+    <image state="normal" picfile="#button.login.normal.bk" rectinfile="0,0,87,30" top="0" left="0" width="87" height="30"/>
+    <image state="down" picfile="#button.login.normal.bk" rectinfile="88,0,88,30" top="0" left="0" width="88" height="30"/>
+    <image state="disable" picfile="#button.login.normal.bk" rectinfile="266,0,88,30" top="0" left="0" width="88" height="30"/>
+  </window>
+
+  <window name="buttonColor" type="button">
+    <property btransparentbk="true" />
+    <buttoninfo subtype="push" />
+    <image state="down" picfile="#button.color.move.bk" top="0" left="0" width="20" height="20"/>
+    <image state="over" picfile="#button.color.down.bk" top="0" left="0" width="20" height="20"/>
+    <image state="all" picfile="#button.color.bk" top="0" left="0" width="18" height="18"/>  
+  </window>
+  
+  <window name="buttonPublish" type="button">
+    <property btransparentbk="true" tooltips="#default"/>
+    <buttoninfo subtype="push" />
+    <image state="normal" picfile="#color001.nor"/>
+    <image state="down" picfile="#color001.over"/>
+    <image state="over" picfile="#color001.over"/>
+    <text state="all" font="#default" horzalign="center" textcolor="RGB(0,0,0)" />
+  </window>
+  
+  <window name="colorbutton1" type="button">
+    <property bclipwindow="true" tooltips="#default" btransparentbk="false" width="18" height="18"/>
+    <buttoninfo subtype="push" />
+    <image state = "normal"  picfile="#color001.nor"   width="18" height="18" />
+    <image state = "over"    picfile="#color001.over"  width="18" height="18" />
+    <image state = "down"    picfile="#color001.over"  width="18" height="18"/>
+  </window>
+
+  <window name="colorbutton2" type="button">
+    <property bclipwindow="true" tooltips="#default" btransparentbk="false" width="18" height="18"/>
+    <buttoninfo subtype="push" />
+    <image state = "normal"  picfile="#color002.nor"   width="18" height="18" />
+    <image state = "over"    picfile="#color002.over"  width="18" height="18" />
+    <image state = "down"    picfile="#color002.over"  width="18" height="18"/>
+  </window>
+
+  <window name="colorbutton3" type="button">
+    <property bclipwindow="true" tooltips="#default" btransparentbk="false" width="18" height="18"/>
+    <buttoninfo subtype="push" />
+    <image state = "normal"  picfile="#color003.nor"   width="18" height="18" />
+    <image state = "over"    picfile="#color003.over"  width="18" height="18" />
+    <image state = "down"    picfile="#color003.over"  width="18" height="18"/>
+  </window>
+
+
+  <window name="colorbutton4" type="button">
+    <property bclipwindow="true" tooltips="#default" btransparentbk="false" width="18" height="18"/>
+    <buttoninfo subtype="push" />
+    <image state = "normal"  picfile="#color004.nor"   width="18" height="18" />
+    <image state = "over"    picfile="#color004.over"  width="18" height="18" />
+    <image state = "down"    picfile="#color004.over"  width="18" height="18"/>
+  </window>
+
+  <window name="colorbutton5" type="button">
+    <property bclipwindow="true" tooltips="#default" btransparentbk="false" width="18" height="18"/>
+    <buttoninfo subtype="push" />
+    <image state = "normal"  picfile="#color005.nor"   width="18" height="18" />
+    <image state = "over"    picfile="#color005.over"  width="18" height="18" />
+    <image state = "down"    picfile="#color005.over"  width="18" height="18"/>
+  </window>
+
+  <window name="colorbutton6" type="button">
+    <property bclipwindow="true" tooltips="#default" btransparentbk="false" width="18" height="18"/>
+    <buttoninfo subtype="push" />
+    <image state = "normal"  picfile="#color006.nor"   width="18" height="18" />
+    <image state = "over"    picfile="#color006.over"  width="18" height="18" />
+    <image state = "down"    picfile="#color006.over"  width="18" height="18"/>
+  </window>
+
+  <window name="colorbutton7" type="button">
+    <property bclipwindow="true" tooltips="#default" btransparentbk="false" width="18" height="18"/>
+    <buttoninfo subtype="push" />
+    <image state = "normal"  picfile="#color007.nor"   width="18" height="18" />
+    <image state = "over"    picfile="#color007.over"  width="18" height="18" />
+    <image state = "down"    picfile="#color007.over"  width="18" height="18"/>
+  </window>
+
+  <window name="colorbutton8" type="button">
+    <property bclipwindow="true" tooltips="#default" btransparentbk="false" width="18" height="18"/>
+    <buttoninfo subtype="push" />
+    <image state = "normal"  picfile="#color008.nor"   width="18" height="18" />
+    <image state = "over"    picfile="#color008.over"  width="18" height="18" />
+    <image state = "down"    picfile="#color008.over"  width="18" height="18"/>
+  </window>
+
+
+</dswindow>
+</theme>

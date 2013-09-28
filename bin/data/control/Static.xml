@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<theme version="1.0" xmlns="http://www.uieasy.com"  xsi:schemaLocation="http://www.uieasy.com QQ2009.xsd">
+  <manifest name="default" folder="Static" author="uieasy" description="QQ2009" link="http://www.uieasy.com" email=""  />
+  
+  <dsfont>
+    <font id="bigfont" fontface="default" fontsize="10" />
+    <font id="bigfont" fontface="Tahoma" fontsize="10" bold="true" />
+    <font id="default_link" fontface="Tahoma" fontsize="18" bold="false" underline="true"/>
+    <font id="default_link1" fontface="Tahoma" fontsize="12" bold="false" underline="true"/>
+  </dsfont>
+
+  <dscursor>
+    <cursor id="handcur" value="hand.cur"/>
+  </dscursor>
+  
+  <dswindow>
+    
+  <window name="StaticLogin" type="static">
+    <property bkcolor="#system_bg" btransparentbk="true" />
+    <text state="all" font="#default" horzalign="left" textcolor="RGB(0,20,20)" />
+  </window>
+
+  <window name="StaticSoftTitle" type="static">
+    <property bkcolor="#system_bg" btransparentbk="true" />
+    <text state="all" font="#bigfont" horzalign="left" textcolor="RGB(88,88,88)" />
+  </window>
+
+    <window name="StaticLoginError" type="static">
+      <property bkcolor="#system_bg" btransparentbk="true" />
+      <text state="all" font="#default" horzalign="left" textcolor="RGB(255,0,0)" />
+    </window>
+
+    <window name="StaticPublish" type="static">
+      <property bkcolor="#system_bg" btransparentbk="true" />
+      <text state="all" font="#default1" horzalign="left" textcolor="RGB(0,0,0)" />
+    </window>
+
+    <window name="linkstatic" type="static">
+      <property tooltips="#第一步，先从强大的新浪网登录" bkcolor="RGB(255,0,244)" btransparentbk="true" cursor="#handcur" />
+      <text state="normal" font="#default_link"  horzalign="left" vertalign="top" textcolor="RGB(0,88,255)" />
+      <text state="over" font="#default_link"  horzalign="left" vertalign="top" textcolor="RGB(0,0,255)" />
+      <text state="down" font="#default_link"  left="1" top="1" horzalign="left" vertalign="top" textcolor="RGB(255,0,0)" />
+    </window>
+    
+    <window name="linkstatic1" type="static">
+      <property bkcolor="RGB(255,0,244)" btransparentbk="true" cursor="#handcur" />
+      <text state="normal" font="#default_link1"  horzalign="left" vertalign="top" textcolor="RGB(88,88,88)" />
+      <text state="over" font="#default_link1"  horzalign="left" vertalign="top" textcolor="RGB(220,0,0)" />
+      <text state="down" font="#default_link1"  left="1" top="1" horzalign="left" vertalign="top" textcolor="RGB(255,0,0)" />
+    </window>
+    
+ </dswindow>
+</theme>

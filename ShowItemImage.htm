@@ -1,0 +1,29 @@
+<HTML>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+
+<link href="style" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" >
+    function fnOnError(msg, url, lineno) {
+        return true;
+    }
+    function HtmlShowBigImage() {
+        var image = document.getElementById("bigimage");
+        external.ShowBigImage(image.innerText);
+    }
+    window.onerror = fnOnError;
+</script>
+</head>
+
+<body>
+    <table class="showItemImage"><tr><td>
+
+           <a onclick="javascript:HtmlShowBigImage();" href="#"><img  src="http://ww1.sinaimg.cn/thumbnail/626e95c6tw1dgjn19hmwjj.jpg"> </img></a></td></tr>
+    </table>
+         <span  id="bigimage" style="display:none;">
+          www.baidu.com
+        </span>
+</body>
+</HTML>

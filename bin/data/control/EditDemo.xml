@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<theme version="1.0" xmlns="http://www.uieasy.com"  xsi:schemaLocation="http://www.uieasy.com QQ2009.xsd">
+	<manifest name="default" folder="editdemo" author="uieasy" description="" link="http://www.uieasy.com" email=""  />
+  
+    <dsfont>
+	   <font id="bigfont" fontface="Tahoma" fontsize="14" />
+	</dsfont>
+		<!-- window main ico -->
+	<dsimage>
+		<image id="edit.imagebk" value="status_Edit.bmp"/>
+		<image id="edit.border.image" value="editborder.bmp"/>
+    <image id="dialog.edit.bk" value="edit.png"/>
+	</dsimage>
+   
+  <dswindow>
+  	
+	<window name="editImageBk" type="edit">
+		<property bkcolor="#system_bg" btransparentbk="true" />		
+		<editinfo buseimagebk="true"/>
+		<rect  state="normal|over" bordercolor="#system.border" fillcolor="RGB(255,255,255)" borderwidth="2" style="hole" />
+	</window>
+	
+	<window name="RoundEdit" type="edit">
+		<property bkcolor="#system_bg" btransparentbk="true" />		
+		<editinfo buseimagebk="false"/>
+		<rect state="normal|over" bordercolor="#system.border" fillcolor="RGB(255,255,255)" borderwidth="3" style="hole" roundwidth="4" roundheight="4" />
+		<rect state="disable" bordercolor="#system.border" fillcolor="RGB(255,0,0)" borderwidth="3"  roundwidth="4" roundheight="4" />
+	</window>
+	
+	<window name="IcoEdit" type="edit">
+		<property bkcolor="#system_bg" btransparentbk="true" />		
+		<editinfo buseimagebk="true" marginleft="26" marginright="4" textcolor="RGB(255,255,255)" font="#default_bold"/>
+		<image state="all"   picfile="#edit.imagebk" />
+		<text id="auto.item" state="non" font="#default"  content="Search Movie,Music,Game..." horzalign="left" left="27" bsingleline="true" textcolor="RGB(43,84,116)" />
+		
+	</window>
+	
+	<window name="EditBkOnParent" type="edit">
+		<property bkcolor="#system_bg" btransparentbk="true" />		
+		<editinfo buseimagebk="true" textcolor="RGB(168,168,168)" font="#bigfont"/>
+		
+	</window>
+	
+	<window name="Editdialog" type="edit">
+    <property bkcolor="#system_bg" btransparentbk="true" />
+    <editinfo buseimagebk="false" marginleft="1" marginright="1" textcolor="RGB(255,255,255)" font="#default_bold"/>
+    <rect state="normal|over" bordercolor="#system.border" fillcolor="RGB(255,255,255)" borderwidth="3" style="hole" roundwidth="7" roundheight="7" />
+    <rect state="disable" bordercolor="#system.border" fillcolor="RGB(255,0,0)" borderwidth="3"  roundwidth="7" roundheight="7" />
+  </window>
+    
+    <window name="EditUserName" type="edit">
+      <property bkcolor="#system_bg" btransparentbk="true" />
+      <editinfo buseimagebk="false" marginleft="1" marginright="1" textcolor="RGB(255,255,255)" font="#default_bold"/>
+      <rect state="normal" bordercolor="#system.border" fillcolor="RGB(255,255,255)" borderwidth="3" style="hole" roundwidth="5" roundheight="5" />
+      <rect state="over" bordercolor="#system.border" fillcolor="RGB(200,200,200)" borderwidth="3" style="hole" roundwidth="5" roundheight="5" />
+      <rect state="disable" bordercolor="#system.border" fillcolor="RGB(255,0,0)" borderwidth="3"  roundwidth="5" roundheight="5" />
+      <text id="auto.item" state="non" font="#default" textcolor="RGB(222,222,222)" />
+    </window>
+
+    <window name="EditUserPW" type="edit">
+      <property  tooltips="#第二步，在这里粘贴新浪认证码" bkcolor="#system_bg" btransparentbk="true" />
+      <editinfo buseimagebk="false" marginleft="1" marginright="1" textcolor="RGB(255,255,255)" font="#default_bold"/>
+      <rect state="normal" bordercolor="#system.border" fillcolor="RGB(255,255,255)" borderwidth="3" style="hole" roundwidth="5" roundheight="5" />
+      <rect state="over" bordercolor="#system.border" fillcolor="RGB(200,200,200)" borderwidth="3" style="hole" roundwidth="5" roundheight="5" />
+      <rect state="disable" bordercolor="#system.border" fillcolor="RGB(255,0,0)" borderwidth="3"  roundwidth="5" roundheight="5" />
+    </window>
+  </dswindow>
+
+</theme>
