@@ -132,26 +132,26 @@ void	TodayMenu::OnUpdateSystemColors()
 {
 		CMFCVisualManagerOffice2007::OnUpdateSystemColors();
 
-		//ÊúÏß
+		//ç«–çº¿
 		m_penSeparator.DeleteObject();
 		m_clrSeparator = RGB(200,200,255);
 		m_penSeparator.CreatePen(PS_NULL, 1, m_clrSeparator);
 
-		//ITEM¼äºáÏß
+		//ITEMé—´æ¨ªçº¿
 		m_penSeparator2.DeleteObject();
 		m_penSeparator2.CreatePen(PS_INSIDEFRAME,1,m_clrSeparator);
 
-		//ITEMÊó±êÍ£·ÅÑÕÉ«
+		//ITEMé¼ æ ‡åœæ”¾é¢œè‰²
 		m_clrHighlightDn = RGB(100,100,180);
 		m_brHighlightDn.DeleteObject();
 		m_brHighlightDn.CreateSolidBrush(m_clrHighlightDn);
 
-		//²Ëµ¥±ß¿ò
+		//èœå•è¾¹æ¡†
 		m_clrMenuItemBorder = RGB(180,180,180);
 		m_penMenuItemBorder.DeleteObject();
 		m_penMenuItemBorder.CreatePen(PS_SOLID, 1, m_clrMenuItemBorder);
 
-		//±ß¿ò
+		//è¾¹æ¡†
 		m_penMenuBorder.DeleteObject();
 		m_penMenuBorder.CreatePen(PS_SOLID, 3, RGB(200,200,200));
 

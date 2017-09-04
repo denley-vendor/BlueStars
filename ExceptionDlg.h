@@ -22,7 +22,7 @@ public:
 };
 extern Exception g_Exception;
 
-// ExceptionDlg ∂‘ª∞øÚ
+// ExceptionDlg ÂØπËØùÊ°Ü
 class ExceptionDlg : public CDialog
 {
 	DECLARE_DYNAMIC(ExceptionDlg)

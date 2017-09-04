@@ -1,6 +1,6 @@
-/* ×÷Õß:Íõ¼ÒË§
-   ¸öÈË²©¿Í:http://lanxingxing.net/
-   Ğ»Ğ»ÄúÄÜÀ´¹Ø×¢ÎÒµÄÍøÕ¾:http://shanpao.info/ É½ÅÚÍø,Ğ´ÏÂÄã×îÌÖÑáµÄÈË
+/* ä½œè€…:ç‹å®¶å¸…
+   ä¸ªäººåšå®¢:http://lanxingxing.net/
+   è°¢è°¢æ‚¨èƒ½æ¥å…³æ³¨æˆ‘çš„ç½‘ç«™:http://shanpao.info/ å±±ç‚®ç½‘,å†™ä¸‹ä½ æœ€è®¨åŒçš„äºº
 */
 #define CONTENTDIALOG1_CPP
 
@@ -415,10 +415,10 @@ void	ContentDialog1::OnCopyItem()
 void	ContentDialog1::OnDalogue()
 {
 		//MAIL_DATA mailData;
-		//mailData.sMailFromNickname = _T("À¶ĞÇĞÇ");
+		//mailData.sMailFromNickname = _T("è“æ˜Ÿæ˜Ÿ");
 		//mailData.sSubject.Empty();
-		//mailData.sSubject += _T("ÓÊ¼ş²âÊÔ");
-		//mailData.sMessage = _T("·¢¸öÓÊ¼ş");
+		//mailData.sSubject += _T("é‚®ä»¶æµ‹è¯•");
+		//mailData.sMessage = _T("å‘ä¸ªé‚®ä»¶");
 
 		//MailClient mail;		
 		//if (mail.InitData(NULL,&mailData)) {

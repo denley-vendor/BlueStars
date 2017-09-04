@@ -3,27 +3,27 @@
 #define CONTENTDIALOG6_H
 #include "control/TodayHtmlDialog.h"
 #ifdef _WIN32_WCE
-#error "Windows CE ²»Ö§³Ö CDHtmlDialog¡£"
+#error "Windows CE ä¸æ”¯æŒ CDHtmlDialogã€‚"
 #endif 
 
-// ContentDialog6 ¶Ô»°¿ò
+// ContentDialog6 å¯¹è¯æ¡†
 
 class ContentDialog6 : public TodayHtmlDialog
 {
 	DECLARE_DYNCREATE(ContentDialog6)
 
 public:
-	ContentDialog6(CWnd* pParent = NULL);   // ±ê×¼¹¹Ôìº¯Êı
+	ContentDialog6(CWnd* pParent = NULL);   // æ ‡å‡†æ„é€ å‡½æ•°
 	virtual ~ContentDialog6();
-// ÖØĞ´
+// é‡å†™
 	HRESULT OnButtonOK(IHTMLElement *pElement);
 	HRESULT OnButtonCancel(IHTMLElement *pElement);
 
-// ¶Ô»°¿òÊı¾İ
+// å¯¹è¯æ¡†æ•°æ®
 	enum { IDD = IDD_DIALOG_CONTENT6, IDH = IDR_HTML_ONTENTDIALOG6 };
 
 protected:
-	virtual void DoDataExchange(CDataExchange* pDX);    // DDX/DDV Ö§³Ö
+	virtual void DoDataExchange(CDataExchange* pDX);    // DDX/DDV æ”¯æŒ
 	virtual BOOL OnInitDialog();
 
 	DECLARE_MESSAGE_MAP()

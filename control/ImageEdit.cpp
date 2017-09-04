@@ -228,7 +228,7 @@ void CImageEdit::OnLButtonDown(UINT nFlags, CPoint point)
 
 //	CEdit::OnLButtonDown(nFlags, point);
 	
-	m_istartSel = CharFromPos(point);//Õı×¼±¸Ñ¡ÔñµÄÎ»ÖÃ
+	m_istartSel = CharFromPos(point);//æ­£å‡†å¤‡é€‰æ‹©çš„ä½ç½®
 	m_iendSel = m_istartSel;
 	SetSel(m_istartSel,m_istartSel);
 	

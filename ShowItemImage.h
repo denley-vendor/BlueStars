@@ -3,7 +3,7 @@
 #define SHOWITEMIMAGE_H
 #include "control/TodayHtmlDialog.h"
 #ifdef _WIN32_WCE
-#error "Windows CE ≤ª÷ß≥÷ CDHtmlDialog°£"
+#error "Windows CE ‰∏çÊîØÊåÅ CDHtmlDialog„ÄÇ"
 #endif 
 
 #define  SHOWUSERONFO_CLOSE_TIME 888

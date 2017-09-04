@@ -1,27 +1,27 @@
 #pragma once
 
 #ifdef _WIN32_WCE
-#error "Windows CE ²»Ö§³Ö CDHtmlDialog¡£"
+#error "Windows CE ä¸æ”¯æŒ CDHtmlDialogã€‚"
 #endif 
 
-// chtmptest ¶Ô»°¿ò
+// chtmptest å¯¹è¯æ¡†
 
 class chtmptest : public CDHtmlDialog
 {
 	DECLARE_DYNCREATE(chtmptest)
 
 public:
-	chtmptest(CWnd* pParent = NULL);   // ±ê×¼¹¹Ôìº¯Êı
+	chtmptest(CWnd* pParent = NULL);   // æ ‡å‡†æ„é€ å‡½æ•°
 	virtual ~chtmptest();
-// ÖØĞ´
+// é‡å†™
 	HRESULT OnButtonOK(IHTMLElement *pElement);
 	HRESULT OnButtonCancel(IHTMLElement *pElement);
 
-// ¶Ô»°¿òÊı¾İ
+// å¯¹è¯æ¡†æ•°æ®
 	enum { IDD = IDD_DIALOG_CONTENT6, IDH = IDR_HTML_HTMPTEST };
 
 protected:
-	virtual void DoDataExchange(CDataExchange* pDX);    // DDX/DDV Ö§³Ö
+	virtual void DoDataExchange(CDataExchange* pDX);    // DDX/DDV æ”¯æŒ
 	virtual BOOL OnInitDialog();
 
 	DECLARE_MESSAGE_MAP()

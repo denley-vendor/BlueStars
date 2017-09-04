@@ -461,7 +461,7 @@ const StringW	&StringW::operator+=(const StringW& string)
 
 const StringW	&StringW::operator+=(char ch)
 {
-	//正确性待验证.....
+	//姝ｇ‘鎬у緟楠岃瘉.....
 	Grow(1);
 	WORD wch = (WORD)ch;
 	WORD c = (WORD)(wch & 0x00FF) << 8;

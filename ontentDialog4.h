@@ -4,27 +4,27 @@
 #include "control/TodayHtmlDialog.h"
 
 #ifdef _WIN32_WCE
-#error "Windows CE ²»Ö§³Ö CDHtmlDialog¡£"
+#error "Windows CE ä¸æ”¯æŒ CDHtmlDialogã€‚"
 #endif 
 
-// ContentDialog4 ¶Ô»°¿ò
+// ContentDialog4 å¯¹è¯æ¡†
 
 class ContentDialog4 : public TodayHtmlDialog
 {
 	DECLARE_DYNCREATE(ContentDialog4)
 
 public:
-	ContentDialog4(CWnd* pParent = NULL);   // ±ê×¼¹¹Ôìº¯Êı
+	ContentDialog4(CWnd* pParent = NULL);   // æ ‡å‡†æ„é€ å‡½æ•°
 	virtual ~ContentDialog4();
-// ÖØĞ´
+// é‡å†™
 	HRESULT OnButtonOK(IHTMLElement *pElement);
 	HRESULT OnButtonCancel(IHTMLElement *pElement);
 
-// ¶Ô»°¿òÊı¾İ
+// å¯¹è¯æ¡†æ•°æ®
 	enum { IDD = IDD_DIALOG_CONTENT4, IDH = IDR_HTML_ONTENTDIALOG4 };
 
 protected:
-	virtual void DoDataExchange(CDataExchange* pDX);    // DDX/DDV Ö§³Ö
+	virtual void DoDataExchange(CDataExchange* pDX);    // DDX/DDV æ”¯æŒ
 	virtual BOOL OnInitDialog();
 
 	DECLARE_MESSAGE_MAP()

@@ -90,7 +90,7 @@ inline		void	SetLogging(BOOL bLog){m_bLog = bLog;}
 			void	QuitSMTP();
 			void	CloseAll();
 
-			LONG	MailSend(BOOL bLog = FALSE);		//ÓÊ¼ş·¢ËÍº¯Êı		
+			LONG	MailSend(BOOL bLog = FALSE);		//é‚®ä»¶å‘é€å‡½æ•°		
 			void	WriteLog(TCHAR *pErr);
 
 inline		void	Lock(){m_MailLock.Lock();}

@@ -1,6 +1,6 @@
-/* ×÷Õß:Íõ¼ÒË§
-   ¸öÈË²©¿Í:http://lanxingxing.net/
-   Ð»Ð»ÄúÄÜÀ´¹Ø×¢ÎÒµÄÍøÕ¾:http://shanpao.info/ É½ÅÚÍø,Ð´ÏÂÄã×îÌÖÑáµÄÈË
+/* ä½œè€…:çŽ‹å®¶å¸…
+   ä¸ªäººåšå®¢:http://lanxingxing.net/
+   è°¢è°¢æ‚¨èƒ½æ¥å…³æ³¨æˆ‘çš„ç½‘ç«™:http://shanpao.info/ å±±ç‚®ç½‘,å†™ä¸‹ä½ æœ€è®¨åŽŒçš„äºº
 */
 #define CTODAYMAIN_CPP
 #include "stdafx.h"
@@ -170,7 +170,7 @@ void	CTodayMain::OnMoveWindow()
 			pButton->MoveWindow(&rect2);
 		}
 
-		//·¢²¼
+		//å‘å¸ƒ
 		pButton = (CButton *)GetDlgItem(IDC_BUTTON_PUBLISH);
 		if(pButton){
 			GetWindowRect(rect1);
@@ -565,7 +565,7 @@ void	CTodayMain::SetFollowers(CString &str)
 {
 		CButton *pButton = (CButton*)GetDlgItem(IDC_BUTTON_FANS);
 		if(pButton){
-			str = _T("·ÛË¿") + str;
+			str = _T("ç²‰ä¸") + str;
 			pButton->SetWindowText(str.GetBuffer(0));
 		}
 }
@@ -574,7 +574,7 @@ void	CTodayMain::SetStatuses(CString &str)
 {
 		CButton *pButton = (CButton*)GetDlgItem(IDC_BUTTON_BOLG);
 		if(pButton){
-			str = _T("·¢²¼") + str;
+			str = _T("å‘å¸ƒ") + str;
 			pButton->SetWindowText(str.GetBuffer(0));
 		}
 }
@@ -583,7 +583,7 @@ void	CTodayMain::SetFavourites(CString &str)
 {
 		CButton *pButton = (CButton*)GetDlgItem(IDC_BUTTON_ATTENTION);
 		if(pButton){
-			str = _T("¹Ø×¢") + str;
+			str = _T("å…³æ³¨") + str;
 			pButton->SetWindowText(str.GetBuffer(0));
 		}
 }

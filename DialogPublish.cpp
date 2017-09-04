@@ -1,6 +1,6 @@
-/* ×÷Õß:Íõ¼ÒË§
-   ¸öÈË²©¿Í:http://lanxingxing.net/
-   Ğ»Ğ»ÄúÄÜÀ´¹Ø×¢ÎÒµÄÍøÕ¾:http://shanpao.info/ É½ÅÚÍø,Ğ´ÏÂÄã×îÌÖÑáµÄÈË
+/* ä½œè€…:ç‹å®¶å¸…
+   ä¸ªäººåšå®¢:http://lanxingxing.net/
+   è°¢è°¢æ‚¨èƒ½æ¥å…³æ³¨æˆ‘çš„ç½‘ç«™:http://shanpao.info/ å±±ç‚®ç½‘,å†™ä¸‹ä½ æœ€è®¨åŒçš„äºº
 */
 #define DIALOGPUBLISH_CPP
 
@@ -157,7 +157,7 @@ BOOL	DialogPublish::OnInitDialog()
 			CFM_ITALIC | CFM_SIZE | CFM_UNDERLINE;
 		cf.dwEffects = 0;
 		cf.yHeight = 14*14;
-	//	wcscpy(cf.szFaceName ,_T("Á¥Êé"));
+	//	wcscpy(cf.szFaceName ,_T("éš¶ä¹¦"));
 
 		m_richEdit.SetSelectionCharFormat(cf);
 		return TRUE; 
@@ -204,7 +204,7 @@ void	DialogPublish::OnBnClickedButtonCutinsert()
 			_T("Jpeg Files (*jpeg)"), 
 			NULL, 
 			OFN_HIDEREADONLY | OFN_OVERWRITEPROMPT |OFN_ALLOWMULTISELECT|OFN_ENABLESIZING,
-			_T("Í¼Æ¬¸ñÊ½ (*.JPEG;*.PNG;*.JPG)|*.JPEG;*.PNG;*.JPG;)||"),
+			_T("å›¾ç‰‡æ ¼å¼ (*.JPEG;*.PNG;*.JPG)|*.JPEG;*.PNG;*.JPG;)||"),
 			NULL);
 		if(dlg.DoModal() == IDOK){
 			m_strPath = dlg.GetPathName();

@@ -73,11 +73,11 @@ BOOL	MailClient::ConnectSMTP(char* pHostName)
 		InStream isErr;
 		DWORD dwip = 0;		
 		isErr.Empty();
-		isErr << _T("ÓòÃû½âÎö: ") << isa;
+		isErr << _T("åŸŸåè§£æž: ") << isa;
 		WriteLog((WCHAR*)isErr.GetBuf());
 		HOSTENT *pHost = gethostbyname(pHostName);
 		if(!pHost) {
-			isErr << _T("Ê§°Ü£¡");
+			isErr << _T("å¤±è´¥ï¼");
 			WriteLog((WCHAR*)isErr.GetBuf());
 			return FALSE;
 		}

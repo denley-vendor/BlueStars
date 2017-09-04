@@ -1,6 +1,6 @@
-/* ×÷Õß:Íõ¼ÒË§
-   ¸öÈË²©¿Í:http://lanxingxing.net/
-   Ğ»Ğ»ÄúÄÜÀ´¹Ø×¢ÎÒµÄÍøÕ¾:http://shanpao.info/ É½ÅÚÍø,Ğ´ÏÂÄã×îÌÖÑáµÄÈË
+/* ä½œè€…:ç‹å®¶å¸…
+   ä¸ªäººåšå®¢:http://lanxingxing.net/
+   è°¢è°¢æ‚¨èƒ½æ¥å…³æ³¨æˆ‘çš„ç½‘ç«™:http://shanpao.info/ å±±ç‚®ç½‘,å†™ä¸‹ä½ æœ€è®¨åŒçš„äºº
 */
 #define EXCEPTIONDG_CPP
 
@@ -154,7 +154,7 @@ BOOL	Exception::SaveException(EXCEPTION_POINTERS *pExceptionInfo,LONG triggerPos
 		return TRUE;
 }
 
-// ExceptionDlg ¶Ô»°¿ò
+// ExceptionDlg å¯¹è¯æ¡†
 IMPLEMENT_DYNAMIC(ExceptionDlg, CDialog)
 
 ExceptionDlg::ExceptionDlg(CWnd* pParent /*=NULL*/)

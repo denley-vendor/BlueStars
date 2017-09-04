@@ -899,7 +899,7 @@ FLOAT	OutStreamA::GetFLOAT()
 	return *buf;		
 }
 
-char	*OutStreamA::GetString(DWORD len)//lenÊÇ°üº¬½áÊø·ûµÄ³¤¶È
+char	*OutStreamA::GetString(DWORD len)//lenæ˜¯åŒ…å«ç»“æŸç¬¦çš„é•¿åº¦
 {
 	if(len < 2) return NULL;
 	if((m_nPos+len) > m_nLength) return NULL;
@@ -1023,7 +1023,7 @@ FLOAT	OutStreamW::GetFLOAT()
 	return *buf;		
 }
 
-WCHAR	*OutStreamW::GetString(DWORD len)//lenÊÇ°üº¬½áÊø·ûµÄ³¤¶È
+WCHAR	*OutStreamW::GetString(DWORD len)//lenæ˜¯åŒ…å«ç»“æŸç¬¦çš„é•¿åº¦
 {
 	if(len < 1) return NULL;
 	len *= sizeof(WCHAR);

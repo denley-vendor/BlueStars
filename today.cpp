@@ -1,6 +1,6 @@
-/* ×÷Õß:Íõ¼ÒË§
-   ¸öÈË²©¿Í:http://lanxingxing.net/
-   Ð»Ð»ÄúÄÜÀ´¹Ø×¢ÎÒµÄÍøÕ¾:http://shanpao.info/ É½ÅÚÍø,Ð´ÏÂÄã×îÌÖÑáµÄÈË
+/* ä½œè€…:çŽ‹å®¶å¸…
+   ä¸ªäººåšå®¢:http://lanxingxing.net/
+   è°¢è°¢æ‚¨èƒ½æ¥å…³æ³¨æˆ‘çš„ç½‘ç«™:http://shanpao.info/ å±±ç‚®ç½‘,å†™ä¸‹ä½ æœ€è®¨åŽŒçš„äºº
 */
 
 #include "stdafx.h"
@@ -21,18 +21,18 @@ BEGIN_MESSAGE_MAP(CtodayApp, CWinApp)
 END_MESSAGE_MAP()
 
 
-// CtodayApp ¹¹Ôì
+// CtodayApp æž„é€ 
 
 CtodayApp::CtodayApp()
 {
 }
 
 
-// Î¨Ò»µÄÒ»¸ö CtodayApp ¶ÔÏó
+// å”¯ä¸€çš„ä¸€ä¸ª CtodayApp å¯¹è±¡
 
 CtodayApp theApp;
 
-// CtodayApp ³õÊ¼»¯
+// CtodayApp åˆå§‹åŒ–
 
 BOOL	CtodayApp::InitInstance()
 {
@@ -46,7 +46,7 @@ BOOL	CtodayApp::InitInstance()
 		InitContextMenuManager ();
 		CMFCVisualManager::SetDefaultManager (RUNTIME_CLASS (TodayMenu));
 
-		SetRegistryKey(_T("Ó¦ÓÃ³ÌÐòÏòµ¼Éú³ÉµÄ±¾µØÓ¦ÓÃ³ÌÐò"));
+		SetRegistryKey(_T("åº”ç”¨ç¨‹åºå‘å¯¼ç”Ÿæˆçš„æœ¬åœ°åº”ç”¨ç¨‹åº"));
 
 		EnableAutomation();
 
@@ -297,7 +297,7 @@ HRESULT GetExeFileVersion(CString &strVersion)
 		HINSTANCE hInst = NULL; 
 		hInst=AfxGetApp()->m_hInstance; 
 		WCHAR path_buffer[_MAX_PATH];
-		GetModuleFileName(hInst,path_buffer,sizeof(path_buffer));//µÃµ½exeÎÄ¼þµÄÈ«Â·¾¶
+		GetModuleFileName(hInst,path_buffer,sizeof(path_buffer));//å¾—åˆ°exeæ–‡ä»¶çš„å…¨è·¯å¾„
 
 		VS_FIXEDFILEINFO vs_finfo;
 		HRESULT err = GetFileVersion(path_buffer,&vs_finfo);
@@ -318,7 +318,7 @@ BOOL	GetExePath(CString &strPath)
 		HINSTANCE hInst = NULL; 
 		hInst=AfxGetApp()->m_hInstance; 
 		WCHAR path_buffer[_MAX_PATH];
-		GetModuleFileName(hInst,path_buffer,sizeof(path_buffer));//µÃµ½exeÎÄ¼þµÄÈ«Â·¾¶
+		GetModuleFileName(hInst,path_buffer,sizeof(path_buffer));//å¾—åˆ°exeæ–‡ä»¶çš„å…¨è·¯å¾„
 
 		strPath.Format(_T("%s"),path_buffer);
 		return TRUE;

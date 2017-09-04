@@ -3,7 +3,7 @@
 #define DIALOG_SHOW_USERINFO_H
 
 #ifdef _WIN32_WCE
-#error "Windows CE ²»Ö§³Ö CDHtmlDialog¡£"
+#error "Windows CE ä¸æ”¯æŒ CDHtmlDialogã€‚"
 #endif 
 
 #include "control/TodayHtmlDialog.h"

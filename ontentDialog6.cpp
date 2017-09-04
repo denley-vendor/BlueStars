@@ -1,6 +1,6 @@
-/* ×÷Õß:Íõ¼ÒË§
-   ¸öÈË²©¿Í:http://lanxingxing.net/
-   Ğ»Ğ»ÄúÄÜÀ´¹Ø×¢ÎÒµÄÍøÕ¾:http://shanpao.info/ É½ÅÚÍø,Ğ´ÏÂÄã×îÌÖÑáµÄÈË
+/* ä½œè€…:ç‹å®¶å¸…
+   ä¸ªäººåšå®¢:http://lanxingxing.net/
+   è°¢è°¢æ‚¨èƒ½æ¥å…³æ³¨æˆ‘çš„ç½‘ç«™:http://shanpao.info/ å±±ç‚®ç½‘,å†™ä¸‹ä½ æœ€è®¨åŒçš„äºº
 */
 #define CONTENTDIALOG6_CPP
 #include "stdafx.h"
@@ -8,7 +8,7 @@
 #include "ontentDialog6.h"
 
 
-// ContentDialog6 ¶Ô»°¿ò
+// ContentDialog6 å¯¹è¯æ¡†
 
 IMPLEMENT_DYNCREATE(ContentDialog6, CDHtmlDialog)
 
@@ -30,7 +30,7 @@ void	ContentDialog6::DoDataExchange(CDataExchange* pDX)
 BOOL	ContentDialog6::OnInitDialog()
 {
 		TodayHtmlDialog::OnInitDialog();
-		return TRUE;  // ³ı·Ç½«½¹µãÉèÖÃµ½¿Ø¼ş£¬·ñÔò·µ»Ø TRUE
+		return TRUE;  // é™¤éå°†ç„¦ç‚¹è®¾ç½®åˆ°æ§ä»¶ï¼Œå¦åˆ™è¿”å› TRUE
 }
 
 BEGIN_MESSAGE_MAP(ContentDialog6, TodayHtmlDialog)

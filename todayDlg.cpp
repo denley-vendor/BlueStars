@@ -1,6 +1,6 @@
-/* ×÷Õß:Íõ¼ÒË§
-   ¸öÈË²©¿Í:http://lanxingxing.net/
-   Ð»Ð»ÄúÄÜÀ´¹Ø×¢ÎÒµÄÍøÕ¾:http://shanpao.info/ É½ÅÚÍø,Ð´ÏÂÄã×îÌÖÑáµÄÈË
+/* ä½œè€…:çŽ‹å®¶å¸…
+   ä¸ªäººåšå®¢:http://lanxingxing.net/
+   è°¢è°¢æ‚¨èƒ½æ¥å…³æ³¨æˆ‘çš„ç½‘ç«™:http://shanpao.info/ å±±ç‚®ç½‘,å†™ä¸‹ä½ æœ€è®¨åŽŒçš„äºº
 */
 #define  CTODAYDLG_CPP
 #include "stdafx.h"
@@ -205,7 +205,7 @@ public:
 	enum { IDD = IDD_ABOUTBOX };
 
 	protected:
-	virtual		void	DoDataExchange(CDataExchange* pDX);    // DDX/DDV Ö§³Ö
+	virtual		void	DoDataExchange(CDataExchange* pDX);    // DDX/DDV æ”¯æŒ
 	virtual		BOOL	OnInitDialog();
 
 protected:
@@ -233,7 +233,7 @@ BOOL	CAboutDlg::OnInitDialog()
 		CStatic *pStatic = (CStatic*)GetDlgItem(IDC_STATIC_VERSION);
 		CString strTemp;
 		GetExeFileVersion(strTemp);
-		strTemp = _T("µ±Ç°°æ±¾:") + strTemp;
+		strTemp = _T("å½“å‰ç‰ˆæœ¬:") + strTemp;
 		pStatic->SetWindowText(strTemp.GetBuffer(0));
 
 		CString strApi;
@@ -257,7 +257,7 @@ BOOL	CAboutDlg::OnInitDialog()
 			pEle = pEle->FirstChildElement(pInfo);
 		}
 		if(pEle){
-			strTemp.Format(_T("×îÐÂ°æ±¾%S"),pEle->GetText());
+			strTemp.Format(_T("æœ€æ–°ç‰ˆæœ¬%S"),pEle->GetText());
 		}
 		SAFE_DELETE(pXml);
 
@@ -395,7 +395,7 @@ BOOL	CtodayDlg::OnInitDialog()
 		m_nid.hWnd = GetSafeHwnd ();
 		m_nid.uCallbackMessage = UM_TRAYNOTIFY;
 		m_nid.hIcon = m_hIcon;
-		CString strToolTip = _T("TodayÎ¢²©");
+		CString strToolTip = _T("Todayå¾®åš");
 		_tcsncpy_s (m_nid.szTip, strToolTip, strToolTip.GetLength ());
 		Shell_NotifyIcon (NIM_ADD, &m_nid);
 
@@ -559,7 +559,7 @@ void	CtodayDlg::ShowLoginError()
 {
 		CStatic *pCtrlError = (CStatic *)GetDlgItem(IDC_STATIC_ERROR);
 		if(pCtrlError){
-			pCtrlError->SetWindowText(_T("ÕËºÅÃÜÂë´íÎó.."));
+			pCtrlError->SetWindowText(_T("è´¦å·å¯†ç é”™è¯¯.."));
 			pCtrlError->ShowWindow(SW_SHOW);
 		}
 		CButton *pButton = (CButton*)GetDlgItem(IDC_BUTTON_LOGIN);
@@ -666,7 +666,7 @@ void	CtodayDlg::ShowOauth()
 		m_tsecret.PutWChar(strPw.GetBuffer(0));
 		g_weiBoHttp.SetOauthToken(m_tkey.GetBuf(),m_tsecret.GetBuf());
 		if(m_bRemeberPw){
-			strAcc = _T("ÒÑ¼Ç×¡ÃÜÂë,¿ÉÖ±½ÓµÇÂ¼");
+			strAcc = _T("å·²è®°ä½å¯†ç ,å¯ç›´æŽ¥ç™»å½•");
 			CEdit *pEdit = (CEdit*)GetDlgItem(IDC_EDIT_OAUTHTOKEN);
 			if(pEdit){
 				 pEdit->SetWindowText(strAcc);
@@ -867,7 +867,7 @@ void	CtodayDlg::OnClickedLogin()
 		UpdateData(TRUE);
 		CStatic *pCtrlError = (CStatic *)GetDlgItem(IDC_STATIC_ERROR);
 		if(pCtrlError){
-			//pCtrlError->SetWindowText(_T("µÇÂ¼ÖÐ,wait..."));
+			//pCtrlError->SetWindowText(_T("ç™»å½•ä¸­,wait..."));
 			pCtrlError->ShowWindow(SW_HIDE);
 		}
 		CButton *pButton = (CButton*)GetDlgItem(IDC_BUTTON_LOGIN);

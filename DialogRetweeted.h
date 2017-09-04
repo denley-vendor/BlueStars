@@ -2,7 +2,7 @@
 #include "afxcmn.h"
 #ifndef  DIALOGRETWEETED_H
 #define  DIALOGRETWEETED_H
-// DialogRetweeted ¶Ô»°¿ò
+// DialogRetweeted å¯¹è¯æ¡†
 
 class DialogRetweeted : public CDialog
 {

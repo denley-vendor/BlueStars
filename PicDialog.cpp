@@ -1,6 +1,6 @@
-/* ����:����˧
-   ���˲���:http://lanxingxing.net/
-   лл��������ע�ҵ���վ:http://shanpao.info/ ɽ����,д�������������
+/* 作者:王家帅
+   个人博客:http://lanxingxing.net/
+   谢谢您能来关注我的网站:http://shanpao.info/ 山炮网,写下你最讨厌的人
 */
 #define PICDIALOG_CPP
 #include "stdafx.h"
@@ -36,7 +36,7 @@ BEGIN_MESSAGE_MAP(CPicDialog, CDialog)
 END_MESSAGE_MAP()
 
 
-// CPicDialog ��Ϣ��������
+// CPicDialog 消息处理程序
 
 BOOL	CPicDialog::OnInitDialog()
 {
@@ -231,20 +231,20 @@ void	CPicDialog::SaveToJpg(CString strPath,CBitmap *pBitMap)
 
 BOOL	CPicDialog::SaveBitmapToFile(HBITMAP hBitmap, LPCTSTR lpFileName)
 {
-		HDC hDC; //�豸������ 
-		int iBits; //��ǰ��ʾ�ֱ�����ÿ��������ռ�ֽ��� 
-		WORD wBitCount; //λͼ��ÿ��������ռ�ֽ��� 
-		DWORD dwPaletteSize=0, //�����ɫ���С�� λͼ�������ֽڴ�С ��λͼ�ļ���С �� д���ļ��ֽ��� 
+		HDC hDC; //设备描述表 
+		int iBits; //当前显示分辨率下每个像素所占字节数 
+		WORD wBitCount; //位图中每个像素所占字节数 
+		DWORD dwPaletteSize=0, //定义调色板大小， 位图中像素字节大小 ，位图文件大小 ， 写入文件字节数 
 			dwBmBitsSize, 
 			dwDIBSize, dwWritten; 
-		BITMAP Bitmap; //λͼ���Խṹ 
-		BITMAPFILEHEADER bmfHdr; //λͼ�ļ�ͷ�ṹ 
-		BITMAPINFOHEADER bi; //λͼ��Ϣͷ�ṹ 
-		LPBITMAPINFOHEADER lpbi; //ָ��λͼ��Ϣͷ�ṹ 
+		BITMAP Bitmap; //位图属性结构 
+		BITMAPFILEHEADER bmfHdr; //位图文件头结构 
+		BITMAPINFOHEADER bi; //位图信息头结构 
+		LPBITMAPINFOHEADER lpbi; //指向位图信息头结构 
 
-		HANDLE fh, hDib, hPal,hOldPal=NULL; //�����ļ��������ڴ�������ɫ���� 
+		HANDLE fh, hDib, hPal,hOldPal=NULL; //定义文件，分配内存句柄，调色板句柄 
 
-		//����λͼ�ļ�ÿ��������ռ�ֽ��� 
+		//计算位图文件每个像素所占字节数 
 		HDC hWndDC = CreateDC(_T("DISPLAY"),NULL,NULL,NULL); 
 		hDC = ::CreateCompatibleDC( hWndDC ) ; 
 		iBits = GetDeviceCaps(hDC, BITSPIXEL) * GetDeviceCaps(hDC, PLANES); 
@@ -261,11 +261,11 @@ BOOL	CPicDialog::SaveBitmapToFile(HBITMAP hBitmap, LPCTSTR lpFileName)
 		else 
 			wBitCount = 24 ; 
 
-		//�����ɫ���С 
+		//计算调色板大小 
 		if (wBitCount <= 8) 
 			dwPaletteSize = (1 << wBitCount) * sizeof(RGBQUAD); 
 
-		//����λͼ��Ϣͷ�ṹ 
+		//设置位图信息头结构 
 		GetObject(hBitmap, sizeof(BITMAP), (LPSTR)&Bitmap); 
 		bi.biSize = sizeof(BITMAPINFOHEADER); 
 		bi.biWidth = Bitmap.bmWidth; 
@@ -281,12 +281,12 @@ BOOL	CPicDialog::SaveBitmapToFile(HBITMAP hBitmap, LPCTSTR lpFileName)
 
 		dwBmBitsSize = ((Bitmap.bmWidth * wBitCount+31)/32) * 4 * Bitmap.bmHeight ; 
 
-		//Ϊλͼ���ݷ����ڴ� 
+		//为位图内容分配内存 
 		hDib = GlobalAlloc(GHND,dwBmBitsSize+dwPaletteSize+sizeof(BITMAPINFOHEADER)); 
 		lpbi = (LPBITMAPINFOHEADER)GlobalLock(hDib); 
 		*lpbi = bi; 
 
-		// ������ɫ�� 
+		// 处理调色板 
 		hPal = GetStockObject(DEFAULT_PALETTE); 
 		if (hPal) 
 		{ 
@@ -295,14 +295,14 @@ BOOL	CPicDialog::SaveBitmapToFile(HBITMAP hBitmap, LPCTSTR lpFileName)
 			RealizePalette(hDC); 
 		} 
 
-		// ��ȡ�õ�ɫ�����µ�����ֵ 
+		// 获取该调色板下新的像素值 
 		GetDIBits(hDC, hBitmap, 0, (UINT) Bitmap.bmHeight, 
 			(LPSTR)lpbi + sizeof(BITMAPINFOHEADER) 
 			+dwPaletteSize, 
 			(LPBITMAPINFO ) 
 			lpbi, DIB_RGB_COLORS); 
 
-		//�ָ���ɫ�� 
+		//恢复调色板 
 		if (hOldPal) 
 		{ 
 			SelectPalette(hDC, (HPALETTE)hOldPal, TRUE); 
@@ -310,7 +310,7 @@ BOOL	CPicDialog::SaveBitmapToFile(HBITMAP hBitmap, LPCTSTR lpFileName)
 			::ReleaseDC(NULL, hDC); 
 		} 
 
-		//����λͼ�ļ� 
+		//创建位图文件 
 		fh = CreateFile(lpFileName, GENERIC_WRITE, 
 			0, NULL, CREATE_ALWAYS, 
 			FILE_ATTRIBUTE_NORMAL | FILE_FLAG_SEQUENTIAL_SCAN, NULL); 
@@ -318,7 +318,7 @@ BOOL	CPicDialog::SaveBitmapToFile(HBITMAP hBitmap, LPCTSTR lpFileName)
 		if (fh == INVALID_HANDLE_VALUE) 
 			return FALSE; 
 
-		// ����λͼ�ļ�ͷ 
+		// 设置位图文件头 
 		bmfHdr.bfType = 0x4D42; // "BM" 
 		dwDIBSize = sizeof(BITMAPFILEHEADER) 
 			+ sizeof(BITMAPINFOHEADER) 
@@ -330,14 +330,14 @@ BOOL	CPicDialog::SaveBitmapToFile(HBITMAP hBitmap, LPCTSTR lpFileName)
 			+ (DWORD)sizeof(BITMAPINFOHEADER) 
 			+ dwPaletteSize; 
 
-		// д��λͼ�ļ�ͷ 
+		// 写入位图文件头 
 		WriteFile(fh, (LPSTR)&bmfHdr, sizeof(BITMAPFILEHEADER), &dwWritten, NULL); 
 
-		// д��λͼ�ļ��������� 
+		// 写入位图文件其余内容 
 		WriteFile(fh, (LPSTR)lpbi, dwDIBSize, 
 			&dwWritten, NULL); 
 
-		//��� 
+		//清除 
 		GlobalUnlock(hDib); 
 		GlobalFree(hDib); 
 		CloseHandle(fh); 

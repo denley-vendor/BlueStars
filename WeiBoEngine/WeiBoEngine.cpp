@@ -1,7 +1,7 @@
 
-/* ×÷Õß:Íõ¼ÒË§
-   ¸öÈË²©¿Í:http://lanxingxing.net/
-   Ğ»Ğ»ÄúÄÜÀ´¹Ø×¢ÎÒµÄÍøÕ¾:http://shanpao.info/ É½ÅÚÍø,Ğ´ÏÂÄã×îÌÖÑáµÄÈË
+/* ä½œè€…:ç‹å®¶å¸…
+   ä¸ªäººåšå®¢:http://lanxingxing.net/
+   è°¢è°¢æ‚¨èƒ½æ¥å…³æ³¨æˆ‘çš„ç½‘ç«™:http://shanpao.info/ å±±ç‚®ç½‘,å†™ä¸‹ä½ æœ€è®¨åŒçš„äºº
 */
 #define WEIBOENGINE_CPP
 #include "../StdAfx.h"
@@ -276,7 +276,7 @@ void	WeiBoEngine::AnalysisAttentionItem(const TiXmlElement *pEle,CString &strHtm
 		strTemp1 += _T("<div class='wb2_3'><span>[FROM]</span>[HAVEIMAGE]</div>");
 		strTemp1.Replace(_T("[FROM]"),strHtml.GetBuffer(0));
 		if(strImagePath.GetBufLen()){
-			strHtml = _T("<span><a class='wb2_3' src='[IMAGEURL]' onmousedown=\"external.ShowBigImage(this.src);\" onmouseout=\"external.UShowItemImage();\" onmousemove=\"external.ShowItemImage(this.src,'');\" ><img class='iconalign' src='[LOOKIMAGE]' width='18' height='13'/>²é¿´Í¼Æ¬</a></span>");
+			strHtml = _T("<span><a class='wb2_3' src='[IMAGEURL]' onmousedown=\"external.ShowBigImage(this.src);\" onmouseout=\"external.UShowItemImage();\" onmousemove=\"external.ShowItemImage(this.src,'');\" ><img class='iconalign' src='[LOOKIMAGE]' width='18' height='13'/>æŸ¥çœ‹å›¾ç‰‡</a></span>");
 			strHtml.Replace(_T("[LOOKIMAGE]"),(WCHAR*)g_lookImagePath.GetBuf());
 			strHtml.Replace(_T("[IMAGEURL]"),(WCHAR*)strImagePath.GetBuf());
 			strTemp1.Replace(_T("[HAVEIMAGE]"),strHtml.GetBuffer(0));
@@ -441,7 +441,7 @@ void	WeiBoEngine::AnalysisAttentionItem(const TiXmlElement *pEle,CString &strHtm
 		 strTemp1 += _T("<div class='wb2_3'><span>[FROM]</span>[HAVEIMAGE]</div>");
 		 strTemp1.Replace(_T("[FROM]"),strHtml.GetBuffer(0));
 		 if(strImagePath.GetBufLen()){
-			 strHtml = _T("<span><a class='wb2_3' src='[IMAGEURL]' onmousedown=\"external.ShowBigImage(this.src);\" onmouseout=\"external.UShowItemImage();\" onmousemove=\"external.ShowItemImage(this.src,'');\" ><img class='iconalign' src='[LOOKIMAGE]' width='18' height='13'/>²é¿´Í¼Æ¬</a></span>");
+			 strHtml = _T("<span><a class='wb2_3' src='[IMAGEURL]' onmousedown=\"external.ShowBigImage(this.src);\" onmouseout=\"external.UShowItemImage();\" onmousemove=\"external.ShowItemImage(this.src,'');\" ><img class='iconalign' src='[LOOKIMAGE]' width='18' height='13'/>æŸ¥çœ‹å›¾ç‰‡</a></span>");
 			 strHtml.Replace(_T("[LOOKIMAGE]"),(WCHAR*)g_lookImagePath.GetBuf());
 			 strHtml.Replace(_T("[IMAGEURL]"),(WCHAR*)strImagePath.GetBuf());
 			 strTemp1.Replace(_T("[HAVEIMAGE]"),strHtml.GetBuffer(0));
@@ -602,8 +602,8 @@ void	WeiBoEngine::AnalysisUserInfo(const TiXmlElement *pEle, CString &strHtml)
 
 		CString strTemp2;
 		strTemp2.Format(_T("%s"),(WCHAR*)strGender.GetBuf());
-		strTemp2.Replace(_T("m"),_T("ÄĞ"));
-		strTemp2.Replace(_T("f"),_T("Å®"));
+		strTemp2.Replace(_T("m"),_T("ç”·"));
+		strTemp2.Replace(_T("f"),_T("å¥³"));
 		strTemp2.Replace(_T("n"),_T(""));
 		strTemp1 = _T("<div class=\"lhuserinfo_2_1\"><span><a href=\"#\" class=\"wenzi\">[BOY]</a></span></div>");
 		strTemp1.Replace(_T("[BOY]"),strTemp2.GetBuffer(0));
@@ -616,18 +616,18 @@ void	WeiBoEngine::AnalysisUserInfo(const TiXmlElement *pEle, CString &strHtml)
 		strTemp1.Replace(_T("[LOCATION]"),(WCHAR*)strLocation.GetBuf());
 		strTempHtml += strTemp1;
 
-		strTemp1 = _T("<div class=\"lhuserinfo_2_1\"><span><a href=\"#\" class=\"wenzi\">·ÛË¿:[FLOW]</a></span><span><a href=\"#\" class=\"wenzi\">·¢²¼:[STATUSES]</a></span></div>");
+		strTemp1 = _T("<div class=\"lhuserinfo_2_1\"><span><a href=\"#\" class=\"wenzi\">ç²‰ä¸:[FLOW]</a></span><span><a href=\"#\" class=\"wenzi\">å‘å¸ƒ:[STATUSES]</a></span></div>");
 		strTemp1.Replace(_T("[FLOW]"),(WCHAR*)strFollowers.GetBuf());
 		strTemp1.Replace(_T("[STATUSES]"),(WCHAR*)strStatuses.GetBuf());
 		strTempHtml += strTemp1;
 
-		strTemp1 = _T("<div class=\"lhuserinfo_2_1\"><span><a href=\"#\" class=\"wenzi\">¹Ø×¢:[FAVOURITES]</a></span></div>");
+		strTemp1 = _T("<div class=\"lhuserinfo_2_1\"><span><a href=\"#\" class=\"wenzi\">å…³æ³¨:[FAVOURITES]</a></span></div>");
 		strTemp1.Replace(_T("[FAVOURITES]"),(WCHAR*)strFavourites.GetBuf());
 		strTempHtml += strTemp1;
 
 		strTempHtml += _T("<div></div></div></div>");
 
-		strTemp1 = _T("<div class=\"userdesdiv\"><span><a >&nbsp;&nbsp;½éÉÜ:</a></span><span class=\"userdes\">[USERDES]</span></div>");
+		strTemp1 = _T("<div class=\"userdesdiv\"><span><a >&nbsp;&nbsp;ä»‹ç»:</a></span><span class=\"userdes\">[USERDES]</span></div>");
 		strTemp1.Replace(_T("[USERDES]"),(WCHAR*)strDes.GetBuf());
 		strTempHtml += strTemp1;
 
@@ -781,7 +781,7 @@ void	WeiBoEngine::AnalysisLoginItem(const TiXmlElement *pEle, CString &strHtml)
 		strTemp1 = _T("<div class='wb2_3'><span>[FROM]</span>[HAVEIMAGE]</div>");
 		strTemp1.Replace(_T("[FROM]"),strHtml.GetBuffer(0));
 		if(strImagePath.GetBufLen()){
-			strHtml = _T("<span><a class='wb2_3' src='[IMAGEURL]' onmousedown=\"external.ShowBigImage(this.src);\" onmouseout=\"external.UShowItemImage();\" onmousemove=\"external.ShowItemImage(this.src,'');\" ><img class='iconalign' src='[LOOKIMAGE]' width='18' height='13'/>²é¿´Í¼Æ¬</a></span>");
+			strHtml = _T("<span><a class='wb2_3' src='[IMAGEURL]' onmousedown=\"external.ShowBigImage(this.src);\" onmouseout=\"external.UShowItemImage();\" onmousemove=\"external.ShowItemImage(this.src,'');\" ><img class='iconalign' src='[LOOKIMAGE]' width='18' height='13'/>æŸ¥çœ‹å›¾ç‰‡</a></span>");
 			strHtml.Replace(_T("[LOOKIMAGE]"),(WCHAR*)g_lookImagePath.GetBuf());
 			strHtml.Replace(_T("[IMAGEURL]"),(WCHAR*)strImagePath.GetBuf());
 			strTemp1.Replace(_T("[HAVEIMAGE]"),strHtml.GetBuffer(0));

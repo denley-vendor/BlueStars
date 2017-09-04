@@ -57,20 +57,20 @@ public:
 	WeiBoApi(){
 		m_appKey.Format(_T("%d"),APPKEY);
 	}
-						//»ñÈ¡µÇÂ¼ÓÃ»§ĞÅÏ¢
+						//è·å–ç™»å½•ç”¨æˆ·ä¿¡æ¯
 	inline	CString		GetUserInfo(){return _T("http://api.t.sina.com.cn/account/verify_credentials.xml?source=") + m_appKey;}
-						//»ñÈ¡µÇÂ¼ÓÃ»§·¢²¼ÌõÄ¿
+						//è·å–ç™»å½•ç”¨æˆ·å‘å¸ƒæ¡ç›®
 	inline	CString		GetUserItem(){return _T("http://api.t.sina.com.cn/statuses/user_timeline.xml?source=") + m_appKey;}
-						//»ñÈ¡ÎÒ¹Ø×¢µÄÈË·¢²¼ÌõÄ¿
+						//è·å–æˆ‘å…³æ³¨çš„äººå‘å¸ƒæ¡ç›®
 	inline	CString		GetAttentionUserItem(){return _T("http://api.t.sina.com.cn/statuses/home_timeline.xml?source=")+m_appKey;}
 
 	inline  CString		GetOtherUserInfo(){return _T("http://api.t.sina.com.cn/users/show.xml?source=") + m_appKey;}
-						//@ÎÒµÄÌõÄ¿
+						//@æˆ‘çš„æ¡ç›®
 	inline	CString		GetAtLoginUserItem(){return _T("http://api.t.sina.com.cn/statuses/mentions.xml?source=") + m_appKey;}
-						//·¢²¼Ò»ÌõÎÄ±¾Î¢
+						//å‘å¸ƒä¸€æ¡æ–‡æœ¬å¾®
 	inline	CString		PublishItem(){return _T("http://api.t.sina.com.cn/statuses/update.xml?source=") + m_appKey;}
 
-						//×ª·¢Ò»ÌõĞÅÏ¢
+						//è½¬å‘ä¸€æ¡ä¿¡æ¯
 	inline	CString		Retweeted(){return _T("http://api.t.sina.com.cn/statuses/repost.xml?source=") + m_appKey;}
 
 	inline	CString		LookItem(){return _T("http://api.t.sina.com.cn/[USERID]/statuses/[ITEMID]?source=") + m_appKey;}

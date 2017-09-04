@@ -86,16 +86,16 @@ bool CImageButton::setBitmaps(const wchar_t *strBitmapNormal,const wchar_t *strB
 }
 bool CImageButton::setBitmaps(HBITMAP hBitmapNormal,HBITMAP hBitmapHot,HBITMAP hBitmapClick)
 {
-	//1.Ê×ÏÈÊÍ·Åµô×ÊÔ´
+	//1.é¦–å…ˆé‡Šæ”¾æŽ‰èµ„æº
 	freeResource();
 	
-	//2.ÉèÖÃ±äÁ¿
+	//2.è®¾ç½®å˜é‡
 	m_hBitmapNormal = hBitmapNormal;
 	m_hBitmapHot = hBitmapHot;
 	m_hBitmapClick = hBitmapClick;
 	GetWindowRect(&m_rect);
 
-	//3.ÉèÖÃ³õÊ¼Öµ
+	//3.è®¾ç½®åˆå§‹å€¼
 	return setCurrentBitmap(m_hBitmapNormal);
 
 }
@@ -161,7 +161,7 @@ void CImageButton::DrawItem(LPDRAWITEMSTRUCT lpDrawItemStruct)
 {
 
 	// TODO:  Add your code to draw the specified item
-	//1. »ñµÃdc
+	//1. èŽ·å¾—dc
 	CDC *pDc = CDC::FromHandle(lpDrawItemStruct->hDC);
 
 	CDC dc;

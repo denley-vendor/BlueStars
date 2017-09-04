@@ -5,7 +5,7 @@
 #include "DialogRetweeted.h"
 
 #ifdef _WIN32_WCE
-#error "Windows CE ²»Ö§³Ö CDHtmlDialog¡£"
+#error "Windows CE ä¸æ”¯æŒ CDHtmlDialogã€‚"
 #endif 
 
 class ContentDialog1 : public TodayHtmlDialog

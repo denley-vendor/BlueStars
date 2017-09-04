@@ -13,7 +13,7 @@ public:
 	enum { IDD = IDD_DIALOG_PUBLISH };
 
 protected:
-	virtual		void		DoDataExchange(CDataExchange* pDX);    // DDX/DDV ÷ß≥÷
+	virtual		void		DoDataExchange(CDataExchange* pDX);    // DDX/DDV ÊîØÊåÅ
 
 public:
 	virtual		BOOL		OnInitDialog();

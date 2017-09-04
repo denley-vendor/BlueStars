@@ -1,5 +1,5 @@
 
-// TodayDialogDlg.h : м╥нд╪Ч
+// TodayDialogDlg.h : Е╓╢Ф√┤Д╩╤
 //
 
 #pragma once
@@ -8,7 +8,7 @@
 using namespace Gdiplus;
 
 
-// CTodayDialogDlg ╤т╩╟©Р
+// CTodayDialogDlg Е╞╧Х╞²Ф║├
 class CTodayDialogDlg : public CDialog
 {
 public:

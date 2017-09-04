@@ -4,17 +4,17 @@
 #include "control/TodayHtmlDialog.h"
 
 #ifdef _WIN32_WCE
-#error "Windows CE ²»Ö§³Ö CDHtmlDialog¡£"
+#error "Windows CE ä¸æ”¯æŒ CDHtmlDialogã€‚"
 #endif 
 
-// ContentDialog3 ¶Ô»°¿ò
+// ContentDialog3 å¯¹è¯æ¡†
 
 class ContentDialog3 : public TodayHtmlDialog
 {
 	DECLARE_DYNCREATE(ContentDialog3)
 
 public:
-	ContentDialog3(CWnd* pParent = NULL);   // ±ê×¼¹¹Ôìº¯Êı
+	ContentDialog3(CWnd* pParent = NULL);   // æ ‡å‡†æ„é€ å‡½æ•°
 	virtual ~ContentDialog3();
 
 	enum { IDD = IDD_DIALOG_CONTENT3, IDH = IDR_HTML_ONTENTDIALOG3 };

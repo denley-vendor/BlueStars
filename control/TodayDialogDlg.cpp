@@ -1,5 +1,5 @@
 
-// TodayDialogDlg.cpp : 实现文件
+// TodayDialogDlg.cpp : 瀹炵幇鏂囦欢
 //
 
 #include "..//stdafx.h"

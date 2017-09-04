@@ -1,7 +1,7 @@
 
-// stdafx.h : ��׼ϵͳ�����ļ��İ����ļ���
-// ���Ǿ���ʹ�õ��������ĵ�
-// �ض�����Ŀ�İ����ļ�
+// stdafx.h : 标准系统包含文件的包含文件，
+// 或是经常使用但不常更改的
+// 特定于项目的包含文件
 
 #pragma once
 
@@ -10,55 +10,55 @@
 #endif
 
 #ifndef VC_EXTRALEAN
-#define VC_EXTRALEAN		// ��Windows ͷ���ų�����ʹ�õ�����
+#define VC_EXTRALEAN		// 从Windows 头中排除极少使用的资料
 #endif
 
-// ���������ʹ��������ָ����ƽ̨֮ǰ��ƽ̨�����޸�����Ķ��塣
-// �йز�ͬƽ̨����Ӧֵ��������Ϣ����ο�MSDN��
-#ifndef WINVER				// ����ʹ���ض���Windows XP ����߰汾�Ĺ��ܡ�
-#define WINVER 0x0600		// ����ֵ����Ϊ��Ӧ��ֵ����������Windows �������汾��
+// 如果您必须使用下列所指定的平台之前的平台，则修改下面的定义。
+// 有关不同平台的相应值的最新信息，请参考MSDN。
+#ifndef WINVER				// 允许使用特定于Windows XP 或更高版本的功能。
+#define WINVER 0x0600		// 将此值更改为相应的值，以适用于Windows 的其他版本。
 #endif
 
-#ifndef _WIN32_WINNT		// ����ʹ���ض���Windows XP ����߰汾�Ĺ��ܡ�
-#define _WIN32_WINNT 0x0600	// ����ֵ����Ϊ��Ӧ��ֵ����������Windows �������汾��
+#ifndef _WIN32_WINNT		// 允许使用特定于Windows XP 或更高版本的功能。
+#define _WIN32_WINNT 0x0600	// 将此值更改为相应的值，以适用于Windows 的其他版本。
 #endif						
 
-#ifndef _WIN32_WINDOWS		// ����ʹ���ض���Windows 98 ����߰汾�Ĺ��ܡ�
-#define _WIN32_WINDOWS 0x0410 // ��������Ϊ�ʺ�Windows Me ����߰汾����Ӧֵ��
+#ifndef _WIN32_WINDOWS		// 允许使用特定于Windows 98 或更高版本的功能。
+#define _WIN32_WINDOWS 0x0410 // 将它更改为适合Windows Me 或更高版本的相应值。
 #endif
 
-#ifndef _WIN32_IE			// ����ʹ���ض���IE 6.0 ����߰汾�Ĺ��ܡ�
-#define _WIN32_IE 0x0700	// ����ֵ����Ϊ��Ӧ��ֵ����������IE �������汾��ֵ��
+#ifndef _WIN32_IE			// 允许使用特定于IE 6.0 或更高版本的功能。
+#define _WIN32_IE 0x0700	// 将此值更改为相应的值，以适用于IE 的其他版本。值。
 #endif
 					
 
-#define _ATL_CSTRING_EXPLICIT_CONSTRUCTORS	// ĳЩCString ���캯��������ʽ��
+#define _ATL_CSTRING_EXPLICIT_CONSTRUCTORS	// 某些CString 构造函数将是显式的
 
-// �ر�MFC ��ĳЩ�����������ɷ��ĺ��Եľ�����Ϣ������
+// 关闭MFC 对某些常见但经常可放心忽略的警告消息的隐藏
 #define _AFX_ALL_WARNINGS
 
 
 
-#include <afxwin.h>         // MFC ��������ͱ�׼���
+#include <afxwin.h>         // MFC 核心组件和标准组件
 
 
 
-#include <afxext.h>         // MFC ��չ
+#include <afxext.h>         // MFC 扩展
 
-#include <afxdisp.h>        // MFC �Զ�����
+#include <afxdisp.h>        // MFC 自动化类
 
 
 
 #ifndef _AFX_NO_OLE_SUPPORT
-#include <afxdtctl.h>		// MFC ��Internet Explorer 4 �����ؼ���֧��
+#include <afxdtctl.h>		// MFC 对Internet Explorer 4 公共控件的支持
 #endif
 #ifndef _AFX_NO_AFXCMN_SUPPORT
-#include <afxcmn.h>			// MFC ��Windows �����ؼ���֧��
+#include <afxcmn.h>			// MFC 对Windows 公共控件的支持
 #endif // _AFX_NO_AFXCMN_SUPPORT
 
 #include <afxdhtml.h>
 #include <atlimage.h>
-#include <afxcontrolbars.h>     // �������Ϳؼ����� MFC ֧��
+#include <afxcontrolbars.h>     // 功能区和控件条的 MFC 支持
 //#include <afxpopupmenu.h>
 //#define CWinAppEx CWinApp
 
@@ -96,8 +96,8 @@
 
 
 //#define _WTL_NO_AUTOMATIC_NAMESPACE
-//#define _WTL_USE_CSTRING // ʹ��WTL��CString
-//#define _CSTRING_NS // ǿ��ʹ�������ռ䶨��CString
+//#define _WTL_USE_CSTRING // 使用WTL的CString
+//#define _CSTRING_NS // 强制使用命名空间定义CString
 //#include <atlbase.h>
 //#include <atlapp.h>
 

@@ -1,8 +1,8 @@
-/* ×÷Õß:Íõ¼ÒË§
-   ¸öÈË²©¿Í:http://lanxingxing.net/
-   Ğ»Ğ»ÄúÄÜÀ´¹Ø×¢ÎÒµÄÍøÕ¾:http://shanpao.info/ É½ÅÚÍø,Ğ´ÏÂÄã×îÌÖÑáµÄÈË
+/* ä½œè€…:ç‹å®¶å¸…
+   ä¸ªäººåšå®¢:http://lanxingxing.net/
+   è°¢è°¢æ‚¨èƒ½æ¥å…³æ³¨æˆ‘çš„ç½‘ç«™:http://shanpao.info/ å±±ç‚®ç½‘,å†™ä¸‹ä½ æœ€è®¨åŒçš„äºº
 */
-// htmptest.cpp : ÊµÏÖÎÄ¼ş
+// htmptest.cpp : å®ç°æ–‡ä»¶
 //
 
 #include "stdafx.h"
@@ -10,7 +10,7 @@
 #include "htmptest.h"
 
 
-// chtmptest ¶Ô»°¿ò
+// chtmptest å¯¹è¯æ¡†
 
 IMPLEMENT_DYNCREATE(chtmptest, CDHtmlDialog)
 
@@ -32,7 +32,7 @@ void chtmptest::DoDataExchange(CDataExchange* pDX)
 BOOL chtmptest::OnInitDialog()
 {
 	CDHtmlDialog::OnInitDialog();
-	return TRUE;  // ³ı·Ç½«½¹µãÉèÖÃµ½¿Ø¼ş£¬·ñÔò·µ»Ø TRUE
+	return TRUE;  // é™¤éå°†ç„¦ç‚¹è®¾ç½®åˆ°æ§ä»¶ï¼Œå¦åˆ™è¿”å› TRUE
 }
 
 BEGIN_MESSAGE_MAP(chtmptest, CDHtmlDialog)
@@ -45,7 +45,7 @@ END_DHTML_EVENT_MAP()
 
 
 
-// chtmptest ÏûÏ¢´¦Àí³ÌĞò
+// chtmptest æ¶ˆæ¯å¤„ç†ç¨‹åº
 
 HRESULT chtmptest::OnButtonOK(IHTMLElement* /*pElement*/)
 {

@@ -3,7 +3,7 @@
 #define TODAYHTMLDIALOG_H
 
 #ifdef _WIN32_WCE
-#error "Windows CE ²»Ö§³Ö CDHtmlDialog¡£"
+#error "Windows CE ä¸æ”¯æŒ CDHtmlDialogã€‚"
 #endif 
 
 class TodayHtmlDialog : public CDHtmlDialog
